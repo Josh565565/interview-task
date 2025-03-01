@@ -20,10 +20,12 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>{isDarkMode ? "Dark Mode" : "Light Mode"}</h1>
-      <button onClick={toggleDarkMode}>
-        Switch to {isDarkMode ? "Light" : "Dark"} Mode
-      </button>
+      <div>
+        <h1 className="text">{isDarkMode ? "Dark Mode" : "Light Mode"}</h1>
+        <button onClick={toggleDarkMode}>
+          Switch to {isDarkMode ? "Light" : "Dark"} Mode
+        </button>
+      </div>
     </div>
   );
 };
